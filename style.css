@@ -1,0 +1,103 @@
+/* TODO: inserite il CSS necessario per completare il MHW! */
+.choice-grid
+{
+    display: flex;
+    justify-content: space-around;
+    align-content: space-between;
+    flex-wrap: wrap;
+    height: auto;
+    width: auto;
+    margin-top:10px;
+}
+
+.choice-grid div
+{
+background-color: #f4f4f4;
+border:solid 1px #dcdcdc;
+padding: 10px;
+margin-bottom: 20px;
+box-sizing: border-box;
+display: flex;
+flex-direction: column;
+justify-content: center;
+width: 32.5%;
+
+
+}
+
+.choice-grid div img
+{
+    width: 100%;
+}
+
+.choice-grid div .checkbox
+{   width: 20px;
+    height: 20px;
+    z-index: 1;
+}
+
+.question-name
+{  background-position: center;
+    background-size: cover;
+    background-image: url("https://sviluppo-personale.com/wp-content/uploads/2017/12/intellettuale.jpg");
+    border: solid 1px black;
+}
+
+
+.risultato
+{   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+h2
+{
+   margin:0px;
+}
+.risultato p
+{
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+button
+{
+    height: 50px;
+    margin-bottom: 20px;
+    background-color: #cecece;
+}
+button:hover
+{
+    background-color: #e0e0e0;
+}
+
+.finale
+{
+    display: none;
+}
+
+.non-checked
+{
+    opacity: 0.6;
+}
+
+@media (max-width: 700px){
+
+    article{
+        width: 95%;
+    }
+  
+    header div span{
+        display: none;
+    }
+
+
+}
+
+@media (max-width: 500px){
+    .choice-grid div{
+        width: 49%;
+    }
+}
